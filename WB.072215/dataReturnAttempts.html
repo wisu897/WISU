@@ -1,0 +1,21 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <div id = 'twitterFeed'></div>
+        <script>
+        function myCallback(dataWeGotViaJsonp){
+            var text = '';
+            var len = dataWeGotViaJsonp.length;
+           /* for(var i=0;i<len;i++){
+                twitterEntry = dataWeGotViaJsonp[i];
+                text += '<p><img src = "' + twitterEntry.user.profile_image_url_https +'"/>' + twitterEntry['text'] + '</p>'
+            }*/
+			text = "<p>" + dataWeGotViaJsonp + "</p>";
+            document.getElementById('twitterFeed').innerHTML = text;
+        }
+        </script>
+        <script type="text/javascript" src="http://www.wfyi.org/news?callback=myCallback"></script>
+    </body>
+</html>
+

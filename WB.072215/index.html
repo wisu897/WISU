@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head profile="http://www.w3.org/2005/10/profile">
+
+ 
+<link rel="icon" 
+      type="image/png" 
+      href="favicon.ico">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>WISU</title>
+<meta name="description" content="" />                                                                          <!--The description for our page!-->
+<meta name="keywords" content="" />                                                                             <!--Keywords we want on our page!-->
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="images/favicon.ico" /> 
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/selectivizr-min.js"></script>
+<link rel="stylesheet" href="css/ie_7.css" type="text/css" />
+<![endif]-->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="js/all-in-one-min.js"></script>
+<script type="text/javascript" src="js/setup.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+$(window).load(function(){
+	$('#demo-side-bar').removeAttr('style');
+});
+</script>
+<script>
+
+var audio1 = undefined;
+function XavierPlay(e){
+if(audio1 == undefined){
+  audio1 = new Audio('Test1.mp3');
+ audio1.play();
+ e.innerHTML = " Pause..."
+ }
+else if(!audio1.paused){
+audio1.pause();
+e.innerHTML = " Listen...";
+}
+else if(audio1.paused){
+audio1.play();
+e.innerHTML = " Pause...";
+}
+ 
+}
+function SoundCloud(e){
+var SoundCloudvar = document.getElementById("SoundCloudPlayer");
+if(SoundCloudvar.style.display == "none"){
+SoundCloudvar.style.display = "block";
+e.innerHTML = "Hide Player";
+}
+else if (SoundCloudvar.style.display = "block"){
+SoundCloudvar.style.display = "none";
+e.innerHTML = "Listen from SoundCloud";
+}
+}
+</script>
+<style type="text/css">
+.demobar{display:none;}
+#demo-side-bar{top:53px!important;left:90%!important;display:block!important;}
+</style>
+</head>
+<body>
+ <!--Dynamically creates ads markup-->
+  <!-- <!--advertisments!-->
+   
+	<!-- Begining of our TopBanner -->
+	<header class="header_bg clearfix">
+		<div class="container clearfix">
+        	
+			 <!-- Logo -->
+			<div class="logo" >
+            <!-- /Social -->
+				<a href="index.html"><img style="width:352px; height:100px;" src="images/StaticImages/Logo.jpg" alt="" /></a>
+                
+			</div>
+			 <!-- /Logo -->
+			
+			<!-- Master Nav -->
+			
+			 <!-- used to put logo aligned with logo!-->
+			 <div style="clear:both;float:right;">
+			 
+				<nav class="main-menu" >
+				<audio controls >
+					<source src="http://pubint.ic.llnwd.net/stream/pubint_wfyi" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+				<ul>
+					<li><a href="index.html">Home</a></li>					
+					<li><a href="archive.html" >Archives</a></li>
+					<li><a href="Schedule.html">Schedule</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+                   
+			</nav>
+			</div>
+		</div>
+			<!-- /Master Nav -->
+         
+		</div>
+        
+</header>
+
+
+   <!-- /Header -->
+	<!-- /Header -->
+	
+	<div class="clear"></div>
+	
+	<!-- Slider -->
+    <div class="bannerbg" >
+	
+        <div class="container clearfix">
+			
+                <div class="flexslider" >
+                
+				
+				<ul class="slides">
+					<li>
+                        <a href="http://www.indstate.edu/news/isutoday.php?articleid=12302" target="_blank"><img  src="images/Slider/brad.jpg" alt=""  />
+                        <p class="flex-caption">Listen to "All Things Wabash Valley" Wednesday @ 8 p.m.</p></a>
+                    </li>
+                    <li>
+                        <a href="http://www.wfyi.org/programs/on-point-with-tom-ashbrook" target="_blank"><img  src="images/Slider/On_Point_Banner.jpg" style="width:100%" alt=""  />
+                        <p class="flex-caption">"On Point with Tom Ashbrook" Monday - Friday @ 11 p.m. </p></a>
+                    </li>
+					<li>
+                        <a href="http://www.insideindianabusiness.com/" target="_blank"><img src="images/Slider/INbuisness.jpg" style="width:100%" alt="" />
+						<p class="flex-caption">Join "Inside Indiana Business" on WFYI Monday - Friday @ 7:45 a.m., 12:02 p.m., and 5:32 p.m.</p></a>
+                    
+                    </li>
+                    <li>
+					   <a href="http://www.wfyi.org/programs/the-art-of-the-matter" target="_blank">
+                        <img src="images/Slider/Brushes960x320.png" style="width:100%" alt="" />
+						<p class="flex-caption">"Art of the Matter" Saturday @ 7 a.m. and Thursday 8 p.m.</p>
+						</a>
+                    </li>
+                    <li>
+						<a href="http://www.wfyi.org/the-blues-house-party-playlists" target="_blank">
+                        <img src="images/Slider/Mic960x320.png" style="width:100%" alt="" />
+						<p class="flex-caption">Join Host Matthew Socey on "The Blues House Party PLaylist" Saturday @ 8 p.m. and enjoy the fun.
+						</p>
+						</a>
+                        
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+		
+    </div>
+	<!-- /Slider -->
+	
+	<div class="clear padding40"></div>
+
+	
+	<!-- Content -->
+	<section class="container clearfix">
+	
+		<!-- START FEATURED COLUMNS -->
+		<div class="col_1_3">
+	
+			<div class="features">
+				<div class="title clearfix" style="align:center;">
+				  <a href="archive.html"><h3><center>All Things Wabash Valley</center></h3></a>
+
+			  </div>
+			<!--	<img src="images/glende.jpg" width="100" height="70" alt="">
+				-->
+				
+				<script language="JavaScript">
+<!--
+
+/*
+Random Image Link Script- By JavaScript Kit(http://www.javascriptkit.com) 
+Over 200+ free JavaScripts here!
+Updated: 00/04/25
+*/
+
+function random_imglink(){
+var myimages=new Array()
+var theImg = document.getElementById('myimages');
+
+//specify random images below. You can have as many as you wish
+//myimages[1]="images/Archive/WV.030415/WV.030415.McKeereduced.jpg"
+myimages[1]="images/Archive/WV.060315/WV.060315.Witt.reduced.jpg"
+
+
+var ry=Math.floor(Math.random()*myimages.length)
+if (ry==0)
+ry=1
+
+document.write('<img src="'+myimages[ry]+'" width="90" height="85" border=0></a>')
+}
+random_imglink()
+//-->
+</script>
+				
+			<!--	<h5>June 10</h5><p>Craig McKee, co-chair of the National Cathedral Association in Washington DC, spoke with Greg Goode to expand on his personal history with the association, how he got involved, and what he does for the cathedral. Originally aired 3/4/15</p>
+<a onclick="SoundCloud(this)"> Listen from SoundCloud</a>
+
+<div id="SoundCloudPlayer" style="position:absolute;display:none;z-index:10;">
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/196847023&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe> !-->
+<h5>June 3rd:</h5><p>Steve Witt, president of the Terre Haute Economic Development Corporation spoke with Greg Goode. Witt spoke about economic development in Terre Haute, putting a focus on downtown and the industrial park, which now has over one thousand acres open for development. Goode discusses with Witt the process of bringing companies and economic projects to the Wabash Valley</p>
+<a onclick="SoundCloud(this)"> Listen from SoundCloud</a>
+
+<div id="SoundCloudPlayer" style="position:absolute;display:none;z-index:10;">
+<!--<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/205493779&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>!-->
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/208317262&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+		  </div>
+		</div>
+</div>
+		<div class="col_1_3">
+		<div class="features">
+            
+				<img src="images/listenonair.jpg" width="100%" height="234" border="0" usemap="#map" />
+
+<map name="map">
+<area shape="rect" coords="17,83,142,137" href="http://www.wfyi.org/television" target="_blank" />
+<area shape="rect" coords="18,156,181,217" href="http://www.wfyi.org" target="_blank" />
+</map>
+ 
+			</div>
+		</div>
+			
+		</div>
+		<div class="col_1_3 last">
+			<div class="features">
+				<div class="title clearfix" align = "center">
+					<a href="hosts.html"target=""><h3>Hosts</h3></a>
+
+				</div>
+				<p><h5>All Things Wabash Valley </h5>Our hosts for “All Things Wabash Valley” are Greg Goode, Teresa Exline, Dave Taylor, and Phil Glende of Indiana State University, and Max Jones, editor of the Terre Haute Tribune-Star. 
+
+</a></p> 
+			</div>
+		</div>
+	
+		<!-- END FEATURED COLUMNS -->
+		
+	  <div class="clear padding10">
+	  </div>
+      <!-- START FEATURED COLUMNS -->
+	  <div class="col_1_3">
+	    <div class="features">
+		<center><h3>ISU Student Media</h3></center>
+		<a href="http://www.isustudentmedia.com/" target="_blank"><img src="images/SMlogo.png" alt="" height = "80" width = "100%"></a></div>
+	  </div>
+	  <div class="col_1_3">
+	   <div class="features">
+	   <center><h3>Calendar</h3><center>
+	 <a href="calendar.html"><img src="images/calendar.jpg" alt="" width = "100%"></a></div>
+	   </div>
+	  </div>
+		<div class="col_1_3 last">
+			<div class="features" style="float:right;">
+			<!--box title per item	<div class="title clearfix">
+					<img src="images/businesses-icon.png" alt="" class="alignleft" />
+					<h3>Perfect for Businesses & Portfolios</h3>
+					
+				</div> !-->
+				<center><h3>Indiana State University</h3></center>
+				<a href="http://www.indstate.edu" target="_blank">
+<img src="images/they.png" alt="" height = "80" width = "100%" align = "right"> </a>
+			</div>
+		</div>
+		<!-- END FEATURED COLUMNS -->	<!-- START FEATURED COLUMNS -->
+        <div class="clear padding10"></div>
+		<hr>
+		<div class="col_2_3">
+		<center><h4>Content provided by WFYI Indianapolis</h4></center>
+		</div>
+		<div class="col_1_3">
+			<div class="features">
+				<div class="title clearfix" align = "center">
+			
+					<a href="http://www.wfyi.org/news/education" target="_blank"><h3>Education</h3></a>
+					
+				</div>
+				<p><h5>Charter School USA Gets OK To Open New School In Indy</h5>Florida-based Charter Schools USA, which operates three Indianapolis schools under contract with the state, earned a cautious go-ahead today to open a charter school, possibly on Indianapolis’ South side, next year.<br /> <a href="http://www.wfyi.org/news/articles/charter-school-usa-gets-ok-to-open-new-school-in-indy" target="_blank" >more info</a></p> 
+			</div>
+		</div>
+		<div class="col_1_3">
+			<div class="features">
+				<div class="title clearfix" align = "center">
+				
+					<a href="http://www.wfyi.org/news/public-affairs" target="_blank"><h3>Public Affairs</h3></a>
+
+				</div>
+				<p><h5>Straight Ticket Voting System May Still Be Studied</h5>Legislation to eliminate Indiana’s straight ticket voting system – or even to study its elimination – failed to clear the General Assembly this session. But some lawmakers – including legislative leaders – say a study committee on the issue is still possible.<br /> <a href="http://www.wfyi.org/news/articles/straight-ticket-voting-system-may-still-be-studied" target="_blank">more info</a></p> 
+			</div>
+		</div>
+		
+		<div class="col_1_3 last">
+			<div class="features">
+			<!--box title per item	<div class="title clearfix">
+					<img src="images/businesses-icon.png" alt="" class="alignleft" />
+					<h3>Perfect for Businesses & Portfolios</h3>
+					
+				</div> !-->
+				<iframe  src="http://cdnres.willyweather.com/widget/loadView.html?id=15906" width="100%" height="228" frameborder="0" 
+scrolling="no"></iframe>
+			</div>
+		</div>
+		
+  <div class="clear padding10"></div>
+		
+	  <div class="line"></div>
+	</section>
+	<!-- /Content -->
+		
+	
+	
+	<section class="homepage_widgets_bg clearfix">
+		<div class="container clearfix">
+		
+			<div class="padding20"></div>
+			
+            
+            <!-- START COL 1/2 -->
+			<div class="col_3_3 ">
+				<h1 class="regular white bottom_line">About Us</h1>
+				<p>WISU, 89.7 FM, provides National Public Radio programming and other local and national public affairs shows to west-central Indiana and east-central Illinois through a partnership between Indiana State University and WFYI, 90.1 FM, of Indianapolis. WFYI has a long history of providing award-winning public radio and television programming in Indianapolis, and now you can hear “Morning Edition,” “All Things Considered,” “Fresh Air,” “This American Life” and other national programs, as well as Indiana news and public affairs, throughout the Wabash Valley on WISU. 
+</p> 
+
+				<p>WISU listeners also can hear a special locally produced show, “All Things Wabash Valley,” every Wednesday at 8 p.m. The show features guests from ISU and throughout the Wabash Valley and covers issues of interest in Terre Haute and surrounding communities. “All Things Wabash Valley” is recorded and produced by students at Indiana State. Previous broadcasts can be found elsewhere on this website. </p>
+				
+			</div>
+			<!-- END COL 1/2 -->
+                      
+			<div class="clear padding10"></div>
+			
+		</div>
+	</section>
+		
+	
+	<!-- footer -->
+	<footer class="footer_bg_bottom clearfix">
+		<div class="footer_bottom container">
+			<div class="col_2_3">
+				
+				<div class="menu">
+					<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Schedule.html">Schedule</a></li>
+					<li><a href="archive.html">Archives</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				</div>
+				
+				
+				<div class="clear padding20"></div>				
+			</div>
+			
+			<div class="clear padding20"></div>
+		</div>
+	</footer>
+	<!-- /footer -->
+</body>
+</html>
